@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Button</title>
+</head>
+<body>
+    <h1 id="hide-me">Hide me</h1>
+    <input id="delete-confirm" type="text" placeholder="Confirm Delete">
+    <button id="delt-btn" disabled>Delete</button>
+    <script>
+        document.getElementById("delete-confirm").addEventListener("keyup",function(event){
+            let deleteButton=document.getElementById("delt-btn");
+            let text=event.target.value;
+            console.log(event.target);
+            if(text==="Delete"){
+                deleteButton.removeAttribute("disabled");
+                
+            }
+            else{
+                deleteButton.setAttribute("disabled",true);
+            }
+        })
+        document.getElementById("delt-btn").addEventListener("click",function(){
+            let hidden=document.getElementById("hide-me");
+            hidden.style.display="none";
+        })
+    </script>
+</body>
+</html>
