@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DOM_4</title>
+</head>
+<body>
+<img onmouseover = "changePic1()"onmouseout= "changePic2()" id="myImg"           src="images/categories/bag.png" width="150" height="200">
+
+<script>
+function changePic1() {
+document.getElementById("myImg").src = "images/categories/shoes.png";
+   }
+  function changePic2(){
+   document.getElementById("myImg").src = "images/categories/bag.png";
+   }
+ </script>
+ </body>
+</html>

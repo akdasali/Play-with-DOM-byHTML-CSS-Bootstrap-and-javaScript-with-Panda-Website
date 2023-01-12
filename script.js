@@ -73,3 +73,11 @@ function allChange(){
         let hidden=document.getElementById("de-sub");
         hidden.style.display="none";
     })
+//mouseenter and mouseout on shoe-2.png and card nike 360
+    document.getElementById("nike").addEventListener("mouseenter",function(){
+        document.getElementById("nike").src = "images/categories/shoes.png";
+    })
+    
+    document.getElementById("nike").addEventListener("mouseout",function(){
+        document.getElementById("nike").src = "images/shoes/shoe-2.png";
+    })
