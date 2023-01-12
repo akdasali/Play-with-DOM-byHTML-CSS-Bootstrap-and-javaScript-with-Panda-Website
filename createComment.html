@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create comment </title>
+</head>
+<body>
+    <!-- <h1>Please comment here</h1>
+
+    <div id="commentContainer">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam         
+           perspiciatis similique eaque velit perferendis tenetur maxime iure 
+           eligendi esse earum possimus praesentium, rem fuga nam tempora sit 
+           delectus alias corrupti?
+         </p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et possimus 
+            libero voluptas facere aspernatur est debitis dolorem atque repudiandae 
+            tenetur voluptate dignissimos corrupti non praesentium, impedit 
+            molestiae, totam, beatae fuga!
+          </p>
+    </div>
+     <div>
+        <textarea name="" id="newComment" cols="60" rows="10"></textarea><br>
+        <button id="buttonPost">Post</button>
+    </div> -->
+    <!-- Same code again practice -->
+    <h1>Please comment here down</h1>
+    <div id="commentBoxNew">
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maxime 
+        veniam ducimus atque quod minus reiciendis dignissimos eligendi aperiam 
+        voluptatibus.
+     </p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maxime 
+        veniam ducimus atque quod minus reiciendis dignissimos eligendi aperiam 
+        voluptatibus.
+     </p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maxime 
+        veniam ducimus atque quod minus reiciendis dignissimos eligendi aperiam 
+        voluptatibus.
+     </p>
+    </div>
+    <div>
+     <textarea name="" id="commentArea" cols="60" rows="10"></textarea><br>
+     <button id="postButton">Post</button>
+    </div>
+
+    <script>
+        // document.getElementById("buttonPost").addEventListener("click",function(){
+        //     let commentRcv=document.getElementById("newComment");
+        //     let commentNew=commentRcv.value;
+        //     let containerBox=document.getElementById("commentContainer");
+        //     let p=document.createElement('p');
+        //     p.innerText=commentNew;
+        //     containerBox.appendChild(p);
+        //     commentRcv.value="";
+        // })
+       
+            document.getElementById("postButton").addEventListener("click",function(){
+                let commentBox=document.getElementById("commentArea");
+                let commentGet=commentBox.value;
+                let addComment=document.getElementById("commentBoxNew");
+                let makePara=document.createElement("p");
+                makePara.innerText=commentGet;
+                commentBoxNew.appendChild(makePara);
+                commentArea.value="";
+
+                
+                
+            })
+    </script>
+   </body>
+     
+</html>
